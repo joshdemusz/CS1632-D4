@@ -1,9 +1,10 @@
 package com.laboon;
 
-import java.util.ArrayList;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
 
-import org.junit.runner.*;
-import org.junit.runner.notification.*;
+import java.util.ArrayList;
 
 public class TestRunner {
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class TestRunner {
 	classesToTest.add(ProgramStackTest.class);
 	classesToTest.add(ProgramAreaTest.class);
 	classesToTest.add(ProgramExecutorTest.class);
+	classesToTest.add(PinningTest.class);
 	
 	// For all test classes added, loop through and use JUnit
 	// to run them.
